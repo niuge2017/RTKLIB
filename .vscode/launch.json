@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug RTKLIB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/str2str",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb", // 使用 lldb 替代 gdb
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for lldb",
+                    "text": "-X run --pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
